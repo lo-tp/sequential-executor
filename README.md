@@ -44,6 +44,7 @@ or with a full URL:
 ## Dependencies
 
 - **pi** — with the `subagent` tool enabled.
+- **[mattpocock/skills](https://github.com/mattpocock/skills)** — provides the `/implement` skill used by each sub-agent.
 - **gh CLI** — authenticated and scoped to the target repo.
 - **GitHub native sub-issues** — the map issue must have sub-issues and blocking links set up.
 - **Clean working tree** — resumes automatically drop partial work, but dispatch starts from a clean slate.

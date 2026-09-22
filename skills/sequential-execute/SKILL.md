@@ -63,8 +63,8 @@ For each pending ticket in topological order, one at a time:
 
 > Implement GitHub issue #<NN> in <owner>/<repo>.
 > 1. Read the requirements: `gh issue view <NN> --json title,body,comments` — work from that body and its acceptance criteria only.
-> 2. Implement: use /tdd at pre-agreed seams; run typechecking and single test files regularly; run the full test suite once at the end.
-> 3. Commit the work as a single commit, message `FIX|IMPROVE|NEW: <ticket title> (#<NN>)` — pick the type by the kind of change.
+> 2. Implement using /implement: point it at the issue body as the spec. It will drive /tdd at pre-agreed seams, run typechecking and tests, and commit to the current branch.
+> 3. Amend the commit message to `FIX|IMPROVE|NEW: <ticket title> (#<NN>)` — pick the type by the kind of change.
 > 4. Close the issue: `gh issue close <NN>`.
 > 5. Report: the commit hash, a summary of the change, the test results, and anything left incomplete.
 
