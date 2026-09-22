@@ -12,7 +12,6 @@ Argument: the map issue number (a URL is accepted).
 
 The human intervenes at exactly two points: the DAG gate before the first dispatch, and the final report. Every other path runs autonomously — a resume drops its partial work without asking, and a failure stops the run with a report, not a question.
 
-Tracker conventions (native sub-issues, blocking links, `gh` gotchas) live in `docs/agents/issue-tracker.md`.
 
 ## 1. Resolve the map
 

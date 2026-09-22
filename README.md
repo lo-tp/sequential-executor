@@ -46,7 +46,6 @@ or with a full URL:
 - **pi** — with the `subagent` tool enabled.
 - **gh CLI** — authenticated and scoped to the target repo.
 - **GitHub native sub-issues** — the map issue must have sub-issues and blocking links set up.
-- **`docs/agents/issue-tracker.md`** — project-level conventions for native sub-issues, blocking links, and `gh` gotchas (referenced by the skill at runtime).
 - **Clean working tree** — resumes automatically drop partial work, but dispatch starts from a clean slate.
 
 ## Design notes
