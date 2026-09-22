@@ -26,12 +26,10 @@ Use `gh` CLI to collect every ticket and its blocking edges:
 
 ```bash
 # List sub-issues of the map issue
-gh api repos/<owner>/<repo>/issues/<N>/sub-issues \
-  --jq '.[] | {number, title, state}'
+gh issue view <N> --json number,title,state,subIssues
 
 # For each sub-issue <NN>, list its blockers
-gh api repos/<owner>/<repo>/issues/<NN>/blocking \
-  --jq '.[].number'
+gh issue view <NN> --json number,blockedBy
 ```
 
 - Keep only `blockedBy` edges whose target is also a ticket of this map; list any open blocker outside the map for the gate.
