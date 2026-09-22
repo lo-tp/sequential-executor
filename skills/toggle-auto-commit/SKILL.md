@@ -1,6 +1,6 @@
 ---
 name: toggle-auto-commit
-description: Toggle auto-commit mode on or off. When on, the agent commits after each logical change.
+description: Toggle auto-commit mode. When /tmp/pi-auto-commit exists, commit after each logical change without being asked. Check for this flag at the start of any coding session.
 ---
 
 # Toggle Auto Commit
