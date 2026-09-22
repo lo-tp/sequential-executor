@@ -16,7 +16,7 @@ The human intervenes at exactly two points: the DAG gate before the first dispat
 ## 1. Resolve the map
 
 - Derive the repo owner/name from `gh repo view --json owner,name`.
-- Progress file: `/tmp/sequential-execute/issue-<N>.progress.md` — one line per ticket: `done|failed|pending <number> [<commit-hash>]`.
+- Progress file: `/tmp/sequential-execute/issue-<N>-<title-slug>.progress.md` — one line per ticket: `done|failed|pending <number> [<commit-hash>]`. Derive `<title-slug>` from the main issue title (lowercase, hyphenated).
 
 **Done when:** the issue number, owner/name, and progress-file path are fixed.
 
